@@ -67,18 +67,6 @@ describe(
       },
     );
     test(
-
-      'se também a URL exibida no navegador muda para "/pokemon/<id>", onde "<id>"'
-      + ' é o id do Pokémon cujos detalhes se deseja ver;',
-      () => {
-        const linkPokemon = screen.getByRole('link', { name: /more details/i });
-        expect(linkPokemon).toBeInTheDocument();
-        userEvent.click(linkPokemon);
-        expect(render.history.location.pathname).toBe('/pokemons/25');
-      },
-    );
-
-    test(
       'se existe um ícone de estrela nos Pokémons favoritados.',
       () => {
         const linkPokemon = screen.getByRole('link', { name: /more details/i });
