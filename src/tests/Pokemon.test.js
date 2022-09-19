@@ -8,7 +8,6 @@ describe(
 
   'Teste o componente "Pokemon"...',
   () => {
-    let render = null;
     beforeEach(() => {
       render = renderWithRouter(<App />);
     });
